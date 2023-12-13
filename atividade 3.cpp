@@ -18,7 +18,7 @@ void atualizarEstoque(int estoque, float preco, int quantidadeProduto)
     estoqueAtualizado = estoque - quantidadeProduto;
     precoAtualizado =  preco * estoqueAtualizado;
     printf("Estoque atual: %d \n",estoqueAtualizado);
-    printf("Preço total em estoque: %.1f \n\n",precoAtualizado);
+    printf("PreÃ§o total em estoque: %.1f \n\n",precoAtualizado);
 }
 
 int main() {
@@ -32,8 +32,8 @@ int main() {
 
     printf("Deseja registrar seu novo produto?\n");
     printf("1 - Sim.\n");
-    printf("2 - Não.\n");
-    scanf("%i", &escolha);
+    printf("2 - NÃ£o.\n");
+    scanf("%d", &escolha);
 
     system("cls||clear");
 
@@ -46,13 +46,13 @@ int main() {
         printf("Nome: ");
         gets(produto.nome);
 
-        printf("Preço: ");
+        printf("PreÃ§o: ");
         scanf("%f", &produto.preco);
 
         fflush(stdin);
 
         printf("Quantidade em estoque: ");
-        scanf("%i", &produto.estoque);
+        scanf("%d", &produto.estoque);
 
         printf("Registro finalizado!");
 
@@ -71,7 +71,7 @@ int main() {
         printf("2 - Consultar estoque\n");
         printf("3 - Sair do programa.\n");
         printf("Resposta: ");
-        scanf("%i", &opcao);
+        scanf("%d", &opcao);
 
         system("cls||clear");
 
